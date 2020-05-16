@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TICTACTOE</title>
+    <link rel="stylesheet" href="tictactoe.css" />
+    <link rel="shortcut icon" href="joystick_filled_50px.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="flex1">
+      <p>TICTACTOE</p>
+    </div>
+    <div class="flex">
+      <div class="player1" id="player1"
+        ><span style="margin-left: 20px;">Player 1</span
+        ><span style="margin-left: 65px; font-weight: bolder;">X</span></div
+      >
+      <div class="player2" id="player2"
+        ><span style="margin-left: 20px;">Player 2</span
+        ><span style="margin-left: 60px; font-weight: bolder;">O</span></div
+      >
+    </div>
+    <div class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningmessage">
+      <div data-winning-message-text style="font-size: 3rem; color: white;"></div>
+      <button id="restart">Restart</button>
+    </div>
+  </body>
+  <script src="tictactoe.js"></script>
+</html>
